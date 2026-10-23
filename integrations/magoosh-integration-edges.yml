@@ -7,29 +7,10 @@ checked:
 - https://www.antler.co/portfolio
 - https://www.techstars.com/portfolio
 - https://www.ycombinator.com/companies
+- discord/integrations/discord-integration-edges.yml
 source:
 - clever/integrations/clever-integration-edges.yml
 edges:
-- partner_name: Clever (clever-app-gallery)
-  partner: clever
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: clever-app-gallery
-  evidence: https://clever.com/app-gallery
-  mirror_of: clever/integrations/clever-integration-edges.yml
-  apps: []
-  listing_count: 2
-  detected: '2026-10-14'
-  detected_by: mirror-platform-listings.py
-  category: assessment, math, reading, other
-  features:
-  - instant_login
-  - secure_sync
-  - library_support
 - partner_name: 500 Global
   partner: 500-global
   partner_match: register
@@ -57,3 +38,42 @@ edges:
     year: '2012'
   detected_by: sweep-accelerator-portfolios.py
   first_seen: '2026-10-21'
+- partner_name: Clever (clever-app-gallery)
+  partner: clever
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: clever-app-gallery
+  evidence: https://clever.com/app-gallery
+  mirror_of: clever/integrations/clever-integration-edges.yml
+  apps: []
+  listing_count: 2
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: assessment, math, reading, other
+  features:
+  - instant_login
+  - secure_sync
+  - library_support
+- partner_name: Discord (discord-app-directory)
+  partner: discord
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: discord-app-directory
+  evidence: https://discord.com/discovery/applications/1008844563798040698
+  mirror_of: discord/integrations/discord-integration-edges.yml
+  apps:
+  - Magooshy
+  listing_count: 1
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Utilities
+  publisher_verified:
+  - discord-verified-app
